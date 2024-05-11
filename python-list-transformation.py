@@ -6,15 +6,15 @@ grades = [85, 90, 78, 88, 76, 95, 89, 80, 72, 93]
 """
 
 grades.sort(reverse=True)
-print(grades)
+print('Grades Sorted in Descending Order: ', grades)
 
 """Task 2: Calculate the average grade and display it."""
 average = sum(grades)/len(grades)
-print(average)
+print('The Average Grade: ', average)
 
 """Task 3: Replace any grade below 80 with the value Failed."""
 for i in range(len(grades)):
     if grades[i] < 80:
         grades[i] = "Failed"
 
-print(grades)
+print('Grades List With the Word "Failed" for Failing Grades: ', grades)
